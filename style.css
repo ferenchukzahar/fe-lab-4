@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 25px 40px;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.clickable-item {
+    cursor: pointer;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px dashed #6c757d;
+    display: inline-block;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Спеціальні класи, які динамічно перемикаються через JS */
+.highlight-style-1 {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+.highlight-style-2 {
+    background-color: #198754 !important;
+    color: #ffffff !important;
+}
+
+#image-container {
+    margin-top: 20px;
+}
+
+#image-container img {
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: width 0.2s ease;
+}
+
+/* Панель із 4 кнопками */
+.controls-panel {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.controls-panel button {
+    background-color: #0dcaf0;
+    color: #000000;
+    border: 1px solid #0aa2c0;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.controls-panel button:hover {
+    background-color: #0bacbe;
+}

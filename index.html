@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ференчук Захар, резюме, студент, КПІ, ІО-45, Відень, спорт, JavaScript, DOM">
+    <meta name="description" content="Лабораторна робота №4 студента КПІ Ференчука Захара Олеговича, група ІО-45.">
+    <title>Ференчук З. О., група ІО-45, Лабораторна робота №4, Варіант 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1-й елемент -->
+    <h2>Ференчук Захар Олегович</h2>
+
+    <!-- 2-й елемент -->
+    <p>Дата народження: 28 жовтня 2007 року. Місце народження: м. Рівне, Україна.</p>
+
+    <!-- 3-й елемент -->
+    <p>Освіта: Рівненська загальноосвітня школа №13, Рівненський природничо-математичний ліцей «Елітар», НТУУ «КПІ імені Ігоря Сікорського».</p>
+
+    <!-- 4-й елемент -->
+    <h3>Мої хобі:</h3>
+
+    <!-- 5-й елемент -->
+    <ul>
+        <li>Спорт (баскетбол, тренування в залі)</li>
+        <li>Відеоігри</li>
+        <li>Активний відпочинок на природі</li>
+    </ul>
+
+    <!-- 6-й ЕЛЕМЕНТ (завдання: вибір через getElementById) -->
+    <div id="elem-6" class="clickable-item">
+        <p><strong>(Елемент №6) Натисни на мене</strong>: цей блок змінює стиль через <code>getElementById()</code></p>
+    </div>
+
+    <!-- 7-й ЕЛЕМЕНТ (завдання: вибір через querySelector) -->
+    <h3 class="elem-7 clickable-item">(Елемент №7) Улюблені фільми (клікни мене — <code>querySelector()</code>):</h3>
+
+    <!-- 8-й елемент -->
+    <ol>
+        <li>Острів проклятих (Shutter Island, 2010)</li>
+        <li>Старим тут не місце (No Country for Old Men, 2007)</li>
+        <li>Інтерстеллар (Interstellar, 2014)</li>
+    </ol>
+
+    <!-- 9-й елемент -->
+    <h3>Улюблене місто</h3>
+
+    <!-- 10-й елемент -->
+    <p>
+        Відень — столиця та найбільше місто Австрії, розташоване на берегах річки Дунай. Місто славиться 
+        своєю імперською архітектурою, величними палацами Гофбург і Шенбрунн, багатою музичною спадщиною 
+        та неповторною культурою традиційних віденських кав'ярень.
+    </p>
+
+    <!-- БЛОК ІЗ ЗОБРАЖЕННЯМИ ТА КНОПКАМИ КЕРУВАННЯ -->
+    <div id="image-container">
+        <a id="city-link" href="https://www.wien.gv.at/" target="_blank" rel="noopener noreferrer">
+            <img id="city-img" src="vienna.jpg" alt="Панорама міста Відень" width="500">
+        </a>
+    </div>
+
+    <div class="controls-panel">
+        <button id="btn-add">Додати</button>
+        <button id="btn-zoom-in">Збільшити</button>
+        <button id="btn-zoom-out">Зменшити</button>
+        <button id="btn-remove">Видалити</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
